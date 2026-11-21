@@ -2,3 +2,7 @@ node_modules
 dist
 .venv
 *.log
+*.tgz
+datasets/
+PROXIMOS-PASSOS.local.md
+*.local.md

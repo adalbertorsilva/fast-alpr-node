@@ -8,6 +8,15 @@ Usa os mesmos modelos ONNX da biblioteca Python via `onnxruntime-node`; só o pr
 reimplementados. Na primeira execução os modelos são baixados para `~/.cache/open-image-models` e
 `~/.cache/fast-plate-ocr` (o mesmo cache das bibliotecas Python).
 
+## Instalação
+
+```sh
+npm install fast-alpr-node
+```
+
+Requer **Node.js ≥ 20**. As dependências nativas (`sharp`, `onnxruntime-node`) trazem binários por plataforma.
+Só Node — não é pacote para browser. Os pesos ONNX são baixados no primeiro uso para o cache acima.
+
 ## Uso
 
 ```ts

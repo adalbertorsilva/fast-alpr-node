@@ -5,6 +5,19 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "README.pt.md",
+    "README.es.md"
+  ],
   "engines": {
     "node": ">=20"
   },
@@ -12,9 +25,15 @@
     "build": "tsc -p tsconfig.build.json",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "predict": "tsx examples/predict.ts"
+    "predict": "tsx examples/predict.ts",
+    "datasets": "python3 tools/download_datasets.py",
+    "datasets:list": "python3 tools/download_datasets.py --list",
+    "datasets:eval": "tsx tools/eval_datasets.ts",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "license": "MIT",
+  "author": "Adalberto Júnior",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/adalbertorsilva/fast-alpr-node.git"
