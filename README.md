@@ -1,5 +1,7 @@
 # fast-alpr-node
 
+**Language:** [English](README.md) · [Português](README.pt.md) · [Español](README.es.md)
+
 Port of [fast-alpr](https://github.com/ankandrew/fast-alpr) (Automatic License Plate Recognition) to Node.js / TypeScript.
 
 It runs the same ONNX models as the Python library through `onnxruntime-node`; only the pre/post-processing is
@@ -39,9 +41,12 @@ CLI example: `npm run predict -- path/to/image.png`
 ## How it works
 
 The pipeline has two stages: a YOLOv9 plate detector, then a CCT OCR on each crop.
-See **[docs/como-funciona.md](docs/como-funciona.md)** for the full walkthrough
-(flowcharts, letterbox geometry, OCR slot decoding, module map, and the test-image
-result).
+See the full walkthrough (flowcharts, letterbox geometry, OCR slot decoding, module map,
+and the test-image result):
+
+- [English](docs/how-it-works.en.md)
+- [Português](docs/how-it-works.pt.md)
+- [Español](docs/how-it-works.es.md)
 
 ## Differences from the Python version
 

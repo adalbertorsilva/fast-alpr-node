@@ -1,5 +1,7 @@
 # Como funciona
 
+**Idioma:** [English](how-it-works.en.md) · [Português](how-it-works.pt.md) · [Español](how-it-works.es.md)
+
 Este documento descreve o pipeline interno do `fast-alpr-node`: como uma imagem vira
 detecção de placa, texto e região. Os números e o resultado abaixo vêm da imagem de
 exemplo [`assets/test_image.png`](../assets/test_image.png) (518×331 px), a mesma usada
